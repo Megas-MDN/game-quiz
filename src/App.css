@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  align-items: center;
+  background: linear-gradient(#41bf8f, #406356);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-family: 'Quicksand';
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'Quicksand';
+  src: url('https://fonts.googleapis.com/css?family=Quicksand');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.winners img {
+  border: 3px solid #95E8C8 ;
 }
+
+.winners {
+  font-family: 'Quicksand';
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  align-self: center;
+  
+}
+
+.winners-score {
+  font-family: 'Quicksand';
+  font-weight: 900;
+  align-self: flex-end;
+}
+.winners-are{
+  margin-bottom: 100px;
+  width: 600px;
+}
+/* .[Project]-Trivia-Game-1-hex { color: #41BF8F; }
+.[Project]-Trivia-Game-2-hex { color: #95E8C8; }
+.[Project]-Trivia-Game-3-hex { color: #4DE3AA; }
+.[Project]-Trivia-Game-4-hex { color: #406356; }
+.[Project]-Trivia-Game-5-hex { color: #3CB083; }
+ */

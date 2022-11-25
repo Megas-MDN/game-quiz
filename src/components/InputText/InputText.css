@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+
+.group {
+  height: 110px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  font-family: 'Quicksand';
+}
+
+.centered label {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: text;
+  font: 400 24.6666666667px Roboto;
+  position: absolute;
+  top: 24.6666666667px;
+  transition: 0.25s ease;
+}
+
+.centered input {
+  background: rgba(226, 226, 226, 0);
+  border: none;
+  color: white;
+  display: block;
+  font-size: 24.6666666667px;
+  padding-top: 24.6666666667px;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.centered input:valid ~ label {
+  color: rgba(255, 255, 255, 0.5);
+  font: 700 22px Roboto;
+  top: 0;
+}
+
+.centered input:focus {
+  font-family: 'Quicksand';
+  outline: none;
+}
+
+input:focus ~ label {
+  color: white;
+  font: 700 22px Roboto;
+  top: 0;
+}
+
+input:focus ~ .bar:before {
+  transform: translateX(0);
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #333 inset;
+  -webkit-text-fill-color: white ! important;
+}
+
+.bar {
+  background: rgba(255, 255, 255, 0.5);
+  content: '';
+  height: 3.6666666667px;
+  position: relative;
+  transition: 0.3s ease;
+  width: 550px;
+}
+
+.bar:before {
+  background: #09e792;
+  content: '';
+  height: 150%;
+  position: absolute;
+  transform: translateX(-100%);
+  width: 100%;
+}
+
+::selection {
+  background: rgba(9, 241, 195, 0.3);
+}
+/* https://codepen.io/lucasyem/pen/ZEEYKdj Referencia */

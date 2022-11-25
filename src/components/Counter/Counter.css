@@ -1,0 +1,145 @@
+.countdown {
+  display: grid;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+.countdownText{
+  margin-bottom: 40px;
+}
+
+@keyframes num {
+  0% {
+    counter-reset: s 30;
+  }
+  3.33% {
+    counter-reset: s 29;
+  }
+  6.66% {
+    counter-reset: s 28;
+  }
+  9.96% {
+    counter-reset: s 27;
+  }
+  13.26% {
+    counter-reset: s 26;
+  }
+  16.56% {
+    counter-reset: s 25;
+  }
+  19.86% {
+    counter-reset: s 24;
+  }
+  23.16% {
+    counter-reset: s 23;
+  }
+  26.46% {
+    counter-reset: s 22;
+  }
+  29.76% {
+    counter-reset: s 21;
+  }
+  33.06% {
+    counter-reset: s 20;
+  }
+  36.36% {
+    counter-reset: s 19;
+  }
+  39.66% {
+    counter-reset: s 18;
+  }
+  42.96% {
+    counter-reset: s 17;
+  }
+  46.26% {
+    counter-reset: s 16;
+  }
+  49.56% {
+    counter-reset: s 15;
+  }
+  52.86% {
+    counter-reset: s 14;
+  }
+  56.16% {
+    counter-reset: s 13;
+  }
+  59.46% {
+    counter-reset: s 12;
+  }
+  62.76% {
+    counter-reset: s 11;
+  }
+  66.06% {
+    counter-reset: s 10;
+  }
+  69.36% {
+    counter-reset: s 9;
+  }
+  72.66% {
+    counter-reset: s 8;
+  }
+  75.96% {
+    counter-reset: s 7;
+  }
+  79.26% {
+    counter-reset: s 6;
+  }
+  82.56% {
+    counter-reset: s 5;
+  }
+  85.86% {
+    counter-reset: s 4;
+  }
+  89.16% {
+    counter-reset: s 3;
+  }
+  92.49% {
+    counter-reset: s 2;
+  }
+  95.82% {
+    counter-reset: s 1;
+  }
+  100% {
+    counter-reset: s 0;
+  }
+  
+}
+svg {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+[r] {
+  fill: none;
+  stroke: silver;
+}
+[r] + [r] {
+  transform: rotate(-90deg);
+  stroke-linecap: round;
+  stroke: #8A9B0F;
+  animation: arc 30s linear infinite;
+  animation-name: arc, col;
+}
+
+@keyframes arc {
+  0% {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes col {
+  0% {
+    stroke: #8A9B0F;
+  }
+  25% {
+    stroke: #F8CA00;
+  }
+  50% {
+    stroke: #E97F02;
+  }
+  75% {
+    stroke: #BD1550;
+  }
+  100% {
+    stroke: #490A3D;
+  }
+}

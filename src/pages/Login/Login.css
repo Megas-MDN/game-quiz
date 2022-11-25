@@ -1,0 +1,73 @@
+.content {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 10px;
+  width: fit-content;
+  font-family: 'Quicksand';
+}
+
+.content img {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 10px;
+  width: fit-content;
+}
+
+.loginBtns button {
+  background: none;
+  border: 2px solid;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #09e792;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  line-height: 1;
+  margin: 0.5%;
+  margin-bottom: 0.5%;
+  padding: 0.33em;
+  width: 49%;
+}
+
+.loginBtns .fill:hover:enabled,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.loginBtns .fill {
+  font-family: 'Quicksand';
+
+  --color: #406356;
+
+  --hover: #09e792;
+}
+
+.loginBtns button {
+  color: var(#a0c7b8);
+  transition: 0.3s;
+}
+
+.loginBtns button:hover:enabled,
+.loginBtns button:focus {
+  border-color: var(--color);
+  color: black;
+}
+
+.loginBtns button:disabled {
+  color: gray;
+}
+
+/* https://webdeasy.de/en/top-css-buttons-en/ */
+/* Color Theme Swatches in Hex */
